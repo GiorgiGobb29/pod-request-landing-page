@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;900&family=Fredoka:wght@400;500;700&family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@300;400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@200;400;600&family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Chivo", sans-serif;
+  background: #121725;
+}
+
+.desktop,
+.tablet,
+.dots {
+  display: none;
+}
+
+.mobile {
+  z-index: -3;
+  position: absolute;
+  width: 100%;
+  opacity: 0.1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 62px 0 57px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  width: 327px;
+  color: #54e6af;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: white;
+}
+
+.text {
+  width: 327px;
+  padding: 16px 24px 0 24px;
+  color: #c2cbe5;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 33px 30px 50px 30px;
+  align-items: center;
+}
+
+.icon img {
+  width: 18%;
+}
+
+.email-validator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.for_btn {
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  padding: 12px;
+  border-radius: 28px;
+  background: #2c344b;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.email-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 28px;
+  background: #54e6af;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
+  color: #121725;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  margin-top: 16px;
+}
+
+.error {
+  display: flex;
+  padding-left: 20px;
+  color: #fb3e3e;
+  align-self: flex-start;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: -3;
+  }
+
+  .dots {
+    display: block;
+    position: absolute;
+    top: 920px;
+  }
+
+  .logo {
+    justify-content: flex-start;
+    padding: 50px 0 0 40px;
+  }
+
+  .title h1 {
+    position: absolute;
+    left: 0;
+    top: 88px;
+    width: 635px;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+  }
+
+  .text {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: left;
+    width: 445px;
+  }
+
+  .icon {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 536px;
+  }
+
+  .email-btn {
+    position: absolute;
+    width: 162px;
+    height: 46px;
+    padding: 9px 27px;
+    margin: 0;
+    top: 5px;
+    right: 5px;
+  }
+
+  .input {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .error {
+    position: absolute;
+  }
+
+  .for_btn {
+    width: 427px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+    top: 360px;
+  }
+
+  .container {
+    position: absolute;
+    top: 259px;
+    left: 30px;
+    overflow: auto;
+    height: 509px;
+    width: 635px;
+    background: #121725;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    position: relative;
+    float: right;
+    top: 130px;
+    z-index: -3;
+  }
+
+  .dots {
+    padding-bottom: 78px;
+    top: 700px;
+    right: 0px;
+    z-index: 2;
+  }
+
+  .logo {
+    justify-content: flex-start;
+    padding: 102px 0 0 165px;
+  }
+
+  .title h1 {
+    width: 665px;
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .text {
+    font-size: 18px;
+    text-align: left;
+    width: 445px;
+  }
+
+  .email-btn {
+    position: absolute;
+    width: 162px;
+    height: 46px;
+    padding: 9px 27px;
+    margin: 0;
+    top: 5px;
+    right: 5px;
+  }
+
+  .input {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .error {
+    position: absolute;
+  }
+
+  .for_btn {
+    width: 427px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+  }
+
+  .container {
+    width: 723px;
+    height: 509px;
+    position: absolute;
+    top: 261px;
+    left: 165px;
+    overflow: auto;
+    background: #121725;
+  }
+}
